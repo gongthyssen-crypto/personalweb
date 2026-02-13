@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thyssen的个人网站</title>
+    <link rel="icon" href="/static/me.png" type="image/png">
     <style>
+        /* 固定根字体与禁止自动缩放，使通过 HTTP(127.0.0.1) 与本地文件打开时显示一致 */
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
         *{
             padding: 0;
             margin: 0;
@@ -51,7 +58,7 @@
         .info{
             background-color: #2a2a2a;
             color: gainsboro;
-            padding: 44px 56px 28px;
+            padding: 44px 56px 44px;
             min-height: 60vh;
         }
         .info p:first-of-type{
@@ -88,9 +95,17 @@
         .info p:nth-of-type(3){
             font-size: 22px;
         }
-        .info p.info-link{
+        .info .info-link-text{
             font-size: 22px;
-            margin-top: 22px;
+            line-height: 2;
+            margin-top: 32px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .info .info-link-link{
+            font-size: 22px;
+            line-height: 2;
+            margin-top: 6px;
             margin-bottom: 0;
             padding-bottom: 0;
         }
@@ -151,10 +166,8 @@
         <br>
         我很喜欢历史和戏曲，欢迎有类似爱好的同学来找我闲聊，我肯定有很多问题想向诸位请教
         </p>
-        <p>想了解更多?请访问我的github主页
-            <br>
-            <a href="https://github.com/gongthyssen-crypto">访问github主页</a>
-        </p>
+        <p class="info-link-text">想了解更多? 请访问我的github主页</p>
+        <p class="info-link-link"><a href="https://github.com/gongthyssen-crypto" target="_blank" rel="noopener noreferrer">访问github主页</a></p>
     </section>
     <footer>
         <p> "半醉半醒日复日，花开花落年复年"</p>
