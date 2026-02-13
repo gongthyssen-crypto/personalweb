@@ -27,7 +27,7 @@
             background-color: antiquewhite;
             color:white;
             height: 85vh;
-            background-image: url(images/back.png);
+            background-image: url(../images/back.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -52,14 +52,86 @@
             background-color: #1f1f1f;
             height: 85px;
             width: 100%;
+            position: relative;
         }
         footer p{
             color:gainsboro;
             font-size: 23px;
             font-weight: bolder;
-            position:absolute;
+            position: absolute;
+            right: 100px;
             line-height: 85px;
-            margin-left: 90px;
+            margin: 0;
+        }
+
+        .info{
+            background-color: #2a2a2a;
+            color: gainsboro;
+            padding: 44px 56px 28px;
+            min-height: 60vh;
+        }
+        .info p:first-of-type{
+            font-size: 22px;
+            line-height: 1.9;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #444;
+            margin-bottom: 28px;
+        }
+        .info img{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 28px;
+            display: block;
+        }
+        .info h3{
+            color: white;
+            font-size: 32px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .info p:nth-of-type(2){
+            font-size: 22px;
+            line-height: 2;
+            padding-bottom: 22px;
+            border-bottom: 1px solid #444;
+            margin-bottom: 22px;
+        }
+        .info p:last-of-type{
+            font-size: 22px;
+        }
+        .info p:nth-of-type(3){
+            font-size: 22px;
+        }
+        .info p.info-link{
+            font-size: 22px;
+            margin-top: 22px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .info a{
+            color: white;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .info a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: azure;
+            transition: width 0.3s ease;
+        }
+        .info a:hover{
+            color: azure;
+            text-decoration: none;
+        }
+        .info a:hover::after{
+            width: 100%;
         }
     </style>
 </head>
